@@ -1,0 +1,59 @@
+INFO    2017-03-10 12:44:36,108 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-10 12:44:36,109 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-10 12:44:36,109 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-10 12:44:36,109 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-10 12:44:36,110 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-10 12:44:36,111 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-10 12:44:36,111 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-10 12:44:36,111 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-10 12:44:36,111 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-10 12:44:36,112 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-10 12:44:36,112 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-10 12:44:36,112 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-10 12:44:36,776 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-10 12:44:36,777 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-10 12:44:36,919 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-10 12:44:36,919 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-10 12:44:36,919 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-10 12:44:36,976 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-10 12:44:36,976 [main] com.wipo.markcode.UtilityManager  - list_of_mark_having_Problem ::[TN/T/2017/4, TN/T/2017/5]
+DEBUG   2017-03-10 12:44:36,976 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-10 12:44:36,976 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/4
+DEBUG   2017-03-10 12:44:37,004 [main] com.wipo.markcode.UtilityManager  - Obtained mark_code ::119
+DEBUG   2017-03-10 12:44:37,004 [main] com.wipo.markcode.DBdataProcessor  - going to insert a new row in IP_NAME table::
+DEBUG   2017-03-10 12:44:37,004 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+ERROR   2017-03-10 12:44:37,164 [main] com.wipo.markcode.UtilityManager  - Exception occurred while inserting or updating Mark code
+java.sql.SQLException: ORA-00001: unique constraint (IPAS330UAT2.DENOMINACION_PK) violated
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:955)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1169)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3285)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3368)
+	at com.wipo.markcode.DBdataProcessor.insertMarkCodeInIP_NAME(DBdataProcessor.java:413)
+	at com.wipo.markcode.UtilityManager.insertMarkCodeInIP_NAME(UtilityManager.java:187)
+	at com.wipo.markcode.UtilityManager.processMarksHavingProblem(UtilityManager.java:146)
+	at com.wipo.markcode.UtilityController.main(UtilityController.java:16)
+DEBUG   2017-03-10 12:44:37,165 [main] com.wipo.markcode.UtilityManager  - Executing for next mark
+DEBUG   2017-03-10 12:44:37,165 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/5
+DEBUG   2017-03-10 12:44:37,166 [main] com.wipo.markcode.UtilityManager  - Obtained mark_code ::120
+DEBUG   2017-03-10 12:44:37,167 [main] com.wipo.markcode.DBdataProcessor  - going to insert a new row in IP_NAME table::
+DEBUG   2017-03-10 12:44:37,167 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+DEBUG   2017-03-10 12:44:37,167 [main] com.wipo.markcode.DBdataProcessor  - Row inserted in IP_NAME successfully
+DEBUG   2017-03-10 12:44:37,167 [main] com.wipo.markcode.DBdataProcessor  - going to update mark_code in IP_MARK table::
+DEBUG   2017-03-10 12:44:37,167 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+DEBUG   2017-03-10 12:44:37,329 [main] com.wipo.markcode.DBdataProcessor  - mark_code in IP_MARK is updates successfully for mark::TN/T/2017/5
+DEBUG   2017-03-10 12:44:37,329 [main] com.wipo.markcode.DBdataProcessor  - ===============================================================
+DEBUG   2017-03-10 12:44:37,330 [main] com.wipo.markcode.UtilityManager  - Mark :::TN/T/2017/5 is processed successfully....
+DEBUG   2017-03-10 12:44:37,330 [main] com.wipo.markcode.UtilityManager  - Marks that are not updated with markCode are::[TN/T/2017/4]
+DEBUG   2017-03-10 12:44:37,330 [main] com.wipo.markcode.UtilityManager  - All Marks are processed successfully.......
+DEBUG   2017-03-10 12:44:37,330 [main] com.wipo.markcode.UtilityManager  - Closing database connection..........!!
+DEBUG   2017-03-10 12:44:37,331 [main] com.wipo.markcode.UtilityManager  - Database connection closed..........!!
+INFO    2017-03-10 12:44:37,331 [main] com.wipo.markcode.UtilityManager  - Processing Completed.......................!!!
+INFO    2017-03-10 12:44:37,331 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-10 12:44:37,331 [main] com.wipo.markcode.UtilityManager  - Please check processed details in log file generated in log folder
+INFO    2017-03-10 12:44:37,331 [main] com.wipo.markcode.UtilityManager  - ********************************************************

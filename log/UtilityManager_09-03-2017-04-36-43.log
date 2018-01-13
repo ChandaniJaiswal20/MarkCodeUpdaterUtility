@@ -1,0 +1,56 @@
+INFO    2017-03-09 16:36:44,142 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-09 16:36:44,143 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-09 16:36:44,143 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-09 16:36:44,143 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-09 16:36:44,145 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-09 16:36:44,146 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-09 16:36:44,839 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-09 16:36:44,847 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-09 16:36:44,990 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-09 16:36:44,990 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-09 16:36:44,990 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-09 16:36:45,054 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-09 16:36:45,054 [main] com.wipo.markcode.UtilityManager  - list_of_mark_having_Problem ::[TN/T/2017/4, TN/T/2017/5]
+DEBUG   2017-03-09 16:36:45,054 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-09 16:36:45,054 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/4
+DEBUG   2017-03-09 16:37:06,848 [main] com.wipo.markcode.UtilityManager  - Obtained mark_code ::115
+DEBUG   2017-03-09 16:37:08,207 [main] com.wipo.markcode.DBdataProcessor  - going to insert a new row in IP_NAME table::
+DEBUG   2017-03-09 16:37:08,207 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+DEBUG   2017-03-09 16:37:43,857 [main] com.wipo.markcode.DBdataProcessor  - Row inserted in IP_NAME successfully
+DEBUG   2017-03-09 16:38:51,203 [main] com.wipo.markcode.DBdataProcessor  - going to update mark_code in IP_MARK table::
+DEBUG   2017-03-09 16:38:51,203 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+ERROR   2017-03-09 16:38:58,405 [main] com.wipo.markcode.UtilityManager  - Exception occurred while inserting or updating Mark code
+java.sql.SQLException
+	at com.wipo.markcode.DBdataProcessor.updateIP_MARKwithMarkCode(DBdataProcessor.java:492)
+	at com.wipo.markcode.UtilityManager.updateIP_MARKwithMarkCode(UtilityManager.java:181)
+	at com.wipo.markcode.UtilityManager.processMarksHavingProblem(UtilityManager.java:147)
+	at com.wipo.markcode.UtilityController.main(UtilityController.java:16)
+DEBUG   2017-03-09 16:38:58,723 [main] com.wipo.markcode.UtilityManager  - Executing for next mark
+DEBUG   2017-03-09 16:39:04,452 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/5
+DEBUG   2017-03-09 16:39:32,372 [main] com.wipo.markcode.UtilityManager  - Obtained mark_code ::116
+DEBUG   2017-03-09 16:39:33,428 [main] com.wipo.markcode.DBdataProcessor  - going to insert a new row in IP_NAME table::
+DEBUG   2017-03-09 16:39:33,428 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+DEBUG   2017-03-09 16:39:44,133 [main] com.wipo.markcode.DBdataProcessor  - Row inserted in IP_NAME successfully
+DEBUG   2017-03-09 16:39:59,445 [main] com.wipo.markcode.DBdataProcessor  - going to update mark_code in IP_MARK table::
+DEBUG   2017-03-09 16:39:59,445 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+ERROR   2017-03-09 16:40:03,541 [main] com.wipo.markcode.UtilityManager  - Exception occurred while inserting or updating Mark code
+java.sql.SQLException
+	at com.wipo.markcode.DBdataProcessor.updateIP_MARKwithMarkCode(DBdataProcessor.java:492)
+	at com.wipo.markcode.UtilityManager.updateIP_MARKwithMarkCode(UtilityManager.java:181)
+	at com.wipo.markcode.UtilityManager.processMarksHavingProblem(UtilityManager.java:147)
+	at com.wipo.markcode.UtilityController.main(UtilityController.java:16)
+DEBUG   2017-03-09 16:40:03,957 [main] com.wipo.markcode.UtilityManager  - Executing for next mark
+DEBUG   2017-03-09 16:40:11,989 [main] com.wipo.markcode.UtilityManager  - Marks that are not updated with markCode are::[TN/T/2017/4, TN/T/2017/5]
+DEBUG   2017-03-09 16:40:19,222 [main] com.wipo.markcode.UtilityManager  - All Marks are processed successfully.......
+DEBUG   2017-03-09 16:40:21,205 [main] com.wipo.markcode.UtilityManager  - Closing database connection..........!!
+DEBUG   2017-03-09 16:40:21,207 [main] com.wipo.markcode.UtilityManager  - Database connection closed..........!!
+INFO    2017-03-09 16:40:21,207 [main] com.wipo.markcode.UtilityManager  - Processing Completed.......................!!!
+INFO    2017-03-09 16:40:21,208 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-09 16:40:21,208 [main] com.wipo.markcode.UtilityManager  - Please check processed details in log file generated in log folder
+INFO    2017-03-09 16:40:21,208 [main] com.wipo.markcode.UtilityManager  - ********************************************************

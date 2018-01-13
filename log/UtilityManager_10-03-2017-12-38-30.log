@@ -1,0 +1,20 @@
+INFO    2017-03-10 12:38:30,259 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-10 12:38:30,260 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-10 12:38:30,260 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-10 12:38:30,260 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-10 12:38:30,261 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-10 12:38:30,262 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-10 12:38:30,921 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-10 12:38:30,924 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-10 12:38:31,074 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-10 12:38:31,074 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-10 12:38:31,074 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-10 12:38:31,132 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-10 12:38:31,133 [main] com.wipo.markcode.UtilityManager  - There are no marks in database with problem
+INFO    2017-03-10 12:38:31,133 [main] com.wipo.markcode.UtilityManager  - Exiting program

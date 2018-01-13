@@ -1,0 +1,18 @@
+INFO    2017-03-14 10:49:18,119 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-14 10:49:18,120 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-14 10:49:18,120 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-14 10:49:18,121 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-14 10:49:18,123 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-14 10:49:18,128 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-14 10:49:18,128 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-14 10:49:18,128 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-14 10:49:18,128 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-14 10:49:18,129 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-14 10:49:18,130 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-14 10:49:18,132 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-14 10:49:22,457 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-14 10:49:22,458 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-14 10:49:22,458 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-14 10:49:23,054 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-14 10:49:23,054 [main] com.wipo.markcode.UtilityManager  - There are no marks in database with problem
+INFO    2017-03-14 10:49:23,054 [main] com.wipo.markcode.UtilityManager  - Exiting program

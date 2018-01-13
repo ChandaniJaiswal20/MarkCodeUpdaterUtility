@@ -1,0 +1,23 @@
+INFO    2017-03-07 16:11:58,852 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-07 16:11:58,853 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-07 16:11:58,853 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-07 16:11:58,853 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-07 16:11:58,854 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-07 16:11:58,855 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-07 16:11:58,856 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-07 16:11:58,856 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-07 16:11:58,856 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-07 16:11:58,856 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-07 16:11:58,856 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-07 16:11:58,856 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-07 16:11:58,861 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-07 16:11:58,861 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-07 16:11:59,063 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-07 16:11:59,063 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-07 16:11:59,063 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-07 16:11:59,134 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-07 16:11:59,134 [main] com.wipo.markcode.UtilityManager  - list_of_mark_having_Problem ::[TN/T/2017/4, TN/T/2017/5]
+DEBUG   2017-03-07 16:11:59,134 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-07 16:11:59,135 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/4
+DEBUG   2017-03-07 16:11:59,149 [main] com.wipo.markcode.MarkEditImpl  - Please correct the GLASSFISH_HOME path in the run.bat file of the utility
+DEBUG   2017-03-07 16:11:59,149 [main] com.wipo.markcode.MarkEditImpl  - Program exit!!!

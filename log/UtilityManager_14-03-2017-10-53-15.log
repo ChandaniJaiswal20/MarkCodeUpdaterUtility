@@ -1,0 +1,19 @@
+INFO    2017-03-14 10:53:16,883 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-14 10:53:16,885 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-14 10:53:16,885 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-14 10:53:16,885 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-14 10:53:16,888 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-14 10:53:16,968 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-14 10:53:16,968 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-14 10:53:16,968 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-14 10:53:16,968 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-14 10:53:16,968 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-14 10:53:16,969 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-14 10:53:16,971 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-14 10:53:21,172 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-14 10:53:21,172 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-14 10:53:21,172 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-14 10:53:21,490 [main] com.wipo.markcode.DBdataProcessor  - Total number of marks with problem::0
+DEBUG   2017-03-14 10:53:21,490 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-14 10:53:21,490 [main] com.wipo.markcode.UtilityManager  - There are no marks in database with problem
+INFO    2017-03-14 10:53:21,490 [main] com.wipo.markcode.UtilityManager  - Exiting program

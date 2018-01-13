@@ -1,0 +1,12 @@
+INFO    2017-03-10 12:20:15,480 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-10 12:20:15,489 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-10 12:20:15,489 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-10 12:20:15,489 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-10 12:20:15,491 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-10 12:20:15,501 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2

@@ -1,0 +1,28 @@
+INFO    2017-03-09 11:34:35,184 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-09 11:34:35,270 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-09 11:34:35,270 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-09 11:34:35,270 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-09 11:34:35,272 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-09 11:34:35,307 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-09 11:34:38,715 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-09 11:34:38,716 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-09 11:34:42,363 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-09 11:34:42,364 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-09 11:34:42,364 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-09 11:34:42,805 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-09 11:34:42,805 [main] com.wipo.markcode.UtilityManager  - list_of_mark_having_Problem ::[]
+DEBUG   2017-03-09 11:34:42,805 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-09 11:34:42,805 [main] com.wipo.markcode.UtilityManager  - Marks that are not updated with markCode are::[]
+DEBUG   2017-03-09 11:34:42,806 [main] com.wipo.markcode.UtilityManager  - All Marks are processed successfully.......
+DEBUG   2017-03-09 11:34:42,806 [main] com.wipo.markcode.UtilityManager  - Closing database connection..........!!
+DEBUG   2017-03-09 11:34:42,807 [main] com.wipo.markcode.UtilityManager  - Database connection closed..........!!
+INFO    2017-03-09 11:34:42,807 [main] com.wipo.markcode.UtilityManager  - Processing Completed.......................!!!
+INFO    2017-03-09 11:34:42,807 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-09 11:34:42,807 [main] com.wipo.markcode.UtilityManager  - Please check processed details in log file generated in log folder
+INFO    2017-03-09 11:34:42,807 [main] com.wipo.markcode.UtilityManager  - ********************************************************

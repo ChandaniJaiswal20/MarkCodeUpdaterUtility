@@ -1,0 +1,77 @@
+INFO    2017-03-08 15:13:57,758 [main] com.wipo.markcode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-03-08 15:13:57,758 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-08 15:13:57,758 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-08 15:13:57,758 [main] com.wipo.markcode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-03-08 15:13:57,760 [main] com.wipo.markcode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - IIOP PORT:::3700
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - iiopHost:::localhost
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - databaseName:::IPAS330UAT2
+DEBUG   2017-03-08 15:13:57,761 [main] com.wipo.markcode.UtilityConfiguration  - userName:::IPAS330UAT2
+DEBUG   2017-03-08 15:13:58,405 [main] com.wipo.markcode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-03-08 15:13:58,406 [main] com.wipo.markcode.DBdataProcessor  - Database Type is Oracle....
+INFO    2017-03-08 15:13:58,552 [main] com.wipo.markcode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-03-08 15:13:58,552 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-08 15:13:58,552 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-08 15:13:58,612 [main] com.wipo.markcode.UtilityManager  - =================================================
+DEBUG   2017-03-08 15:13:58,612 [main] com.wipo.markcode.UtilityManager  - list_of_mark_having_Problem ::[TN/T/2017/4, TN/T/2017/5]
+DEBUG   2017-03-08 15:13:58,612 [main] com.wipo.markcode.UtilityManager  - ################################################
+DEBUG   2017-03-08 15:13:58,612 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/4
+DEBUG   2017-03-08 15:13:58,615 [main] com.wipo.markcode.UtilityManager  - Obtained mark_code ::92
+DEBUG   2017-03-08 15:13:58,615 [main] com.wipo.markcode.DBdataProcessor  - going to insert a new row in IP_NAME table::
+DEBUG   2017-03-08 15:13:58,615 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+DEBUG   2017-03-08 15:13:58,616 [main] com.wipo.markcode.DBdataProcessor  - Row inserted in IP_NAME successfully
+DEBUG   2017-03-08 15:13:58,616 [main] com.wipo.markcode.DBdataProcessor  - ===============================================================
+DEBUG   2017-03-08 15:13:58,616 [main] com.wipo.markcode.DBdataProcessor  - going to update mark_code in IP_MARK table::
+DEBUG   2017-03-08 15:13:58,616 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+ERROR   2017-03-08 15:13:58,628 [main] com.wipo.markcode.DBdataProcessor  - Error Occured while inserting row in IP_NAME table. 
+java.sql.SQLException: ORA-01008: not all variables bound
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:955)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1169)
+	at oracle.jdbc.driver.OracleStatement.executeUpdateInternal(OracleStatement.java:1615)
+	at oracle.jdbc.driver.OracleStatement.executeUpdate(OracleStatement.java:1580)
+	at com.wipo.markcode.DBdataProcessor.updateIP_MARKwithMarkCode(DBdataProcessor.java:419)
+	at com.wipo.markcode.UtilityManager.updateIP_MARKwithMarkCode(UtilityManager.java:156)
+	at com.wipo.markcode.UtilityManager.processMarksHavingProblem(UtilityManager.java:132)
+	at com.wipo.markcode.UtilityController.main(UtilityController.java:16)
+DEBUG   2017-03-08 15:13:58,630 [main] com.wipo.markcode.UtilityManager  - Mark :::TN/T/2017/4 is processed successfully....
+DEBUG   2017-03-08 15:13:58,630 [main] com.wipo.markcode.UtilityManager  - going to process mark:::TN/T/2017/5
+DEBUG   2017-03-08 15:13:58,631 [main] com.wipo.markcode.UtilityManager  - Obtained mark_code ::93
+DEBUG   2017-03-08 15:13:58,631 [main] com.wipo.markcode.DBdataProcessor  - going to insert a new row in IP_NAME table::
+DEBUG   2017-03-08 15:13:58,631 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+DEBUG   2017-03-08 15:13:58,632 [main] com.wipo.markcode.DBdataProcessor  - Row inserted in IP_NAME successfully
+DEBUG   2017-03-08 15:13:58,632 [main] com.wipo.markcode.DBdataProcessor  - ===============================================================
+DEBUG   2017-03-08 15:13:58,632 [main] com.wipo.markcode.DBdataProcessor  - going to update mark_code in IP_MARK table::
+DEBUG   2017-03-08 15:13:58,632 [main] com.wipo.markcode.DBdataProcessor  - ==========================================================
+ERROR   2017-03-08 15:13:58,633 [main] com.wipo.markcode.DBdataProcessor  - Error Occured while inserting row in IP_NAME table. 
+java.sql.SQLException: ORA-01008: not all variables bound
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:955)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1169)
+	at oracle.jdbc.driver.OracleStatement.executeUpdateInternal(OracleStatement.java:1615)
+	at oracle.jdbc.driver.OracleStatement.executeUpdate(OracleStatement.java:1580)
+	at com.wipo.markcode.DBdataProcessor.updateIP_MARKwithMarkCode(DBdataProcessor.java:419)
+	at com.wipo.markcode.UtilityManager.updateIP_MARKwithMarkCode(UtilityManager.java:156)
+	at com.wipo.markcode.UtilityManager.processMarksHavingProblem(UtilityManager.java:132)
+	at com.wipo.markcode.UtilityController.main(UtilityController.java:16)
+DEBUG   2017-03-08 15:13:58,634 [main] com.wipo.markcode.UtilityManager  - Mark :::TN/T/2017/5 is processed successfully....
+DEBUG   2017-03-08 15:13:58,634 [main] com.wipo.markcode.UtilityManager  - All Marks are processed successfully.......
+DEBUG   2017-03-08 15:13:58,634 [main] com.wipo.markcode.UtilityManager  - Closing database connection..........!!
+DEBUG   2017-03-08 15:13:58,637 [main] com.wipo.markcode.UtilityManager  - Database connection closed..........!!
+INFO    2017-03-08 15:13:58,637 [main] com.wipo.markcode.UtilityManager  - Processing Completed.......................!!!
+INFO    2017-03-08 15:13:58,637 [main] com.wipo.markcode.UtilityManager  - =================================================
+INFO    2017-03-08 15:13:58,637 [main] com.wipo.markcode.UtilityManager  - Please check processed details in log file generated in log folder
+INFO    2017-03-08 15:13:58,637 [main] com.wipo.markcode.UtilityManager  - ********************************************************
